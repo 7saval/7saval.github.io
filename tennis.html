@@ -2,40 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>테니스마켓</title>
-        <style>
-            h1 {
-                text-align: center;
-            }
-
-            #txt_welcome {
-                text-align: center;
-                margin-bottom: 50px;
-            }
-
-            .flex-container {
-                display: flex;
-                justify-content: space-evenly;
-            }
-            .card {
-                text-align: center;
-            }
-
-            .card_title {
-                font-size: 20px;
-            }
-
-            .card_button {
-                font-size: 25px;
-                width: 150px;
-                height: 30px;
-            }
-
-            .card_img {
-                width: 300px;
-                height: 300px;
-            }
-        </style>
+        <link rel="stylesheet" href="./style/style.css">
+        <title>테니스 마켓</title>
     </head>
     <body>
         <h1>Tennis market</h1>
@@ -45,24 +13,24 @@
             <br>
             <br>
             <!-- html 파일 불러오는 것에서 경로 불러오기로 변경 -->
-            <a href="/orderlist">order list</a>
+            <a href="#">order list</a>
         </div>
         <div class="flex-container">
             <div class="card">
                 <img class="card_img" src="./img/redRacket.png">
                 <p class="card_title">Red Racket</p>
                 <input class="card_button" type="button" value="order" 
-                    onclick="location.href='/order?productId=1'">
+                    onclick="alert('Red Racket')">
             </div>
             <div class="card">
                 <img class="card_img" src="./img/blueRacket.png">
                 <p class="card_title">Blue Racket</p>
-                <input class="card_button" type="button" value="order" onclick="alert(2)">
+                <input class="card_button" type="button" value="order" onclick="alert('Blue Racket')">
             </div>
             <div class="card">
                 <img class="card_img" src="./img/blackRacket.png">
                 <p class="card_title">Black Racket</p>
-                <input class="card_button" type="button" value="order" onclick="alert(3)">
+                <input class="card_button" type="button" value="order" onclick="alert('Black Racket')">
             </div>
         </div>
     </body>
